@@ -31,6 +31,12 @@ public class UserProfile
         setGenre(genres[genreNum]);
     }
     
+    public UserProfile()
+    {
+        userID = "Undefined user";
+        genre = "Undefined genre";
+    }
+    
     public UserProfile(String givenID, String givenGenre)
     {
         userID = givenID;

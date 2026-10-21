@@ -22,9 +22,13 @@ public class TestUserprofile {
         String name = inp.nextLine();
         
         System.out.print("Please select your favourite genre (0 - Comedy, 1 - Action, 2 - Drama, 3 - Mystery: ");
-        String genre = inp.nextLine();
+        int genreNum = inp.nextInt();
         
-        System.out.print("Hello: ");
+        UserProfile testUser = new UserProfile();
+        
+        testUser.userInputted(name, genreNum);
+        
+        System.out.print("Hello " + testUser.getUserID() + ", your user profile with \"" + testUser.getGenre() + "\" has been created.");
         
     }
 }
